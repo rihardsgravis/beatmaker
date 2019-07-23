@@ -3,7 +3,7 @@
         "name": "Beat Maker",
         "bpm": 75,
         "logo": "https://objects.koji-cdn.com/b1ab25bd-9833-43d2-b569-4a21d089e811/logo.svg",
-        "intro": "Create dope beats in a 16 step sequencer"
+        "intro": "Create beats with a 16 step sequencer"
     },
     "@@editor": [
         {

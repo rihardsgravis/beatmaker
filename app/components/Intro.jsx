@@ -136,15 +136,18 @@ const Wrapper = styled.div`
     z-index: 9;
     background: rgba(0, 0, 0, 0.75);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
 
     img {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         max-height: 40px;
+        max-width: 100%;
     }
 
     p {
         font-size: 14px;
-        margin-bottom: 64px;
+        margin-bottom: 48px;
+        text-align: center;
     }
 
     button {

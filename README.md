@@ -1,6 +1,6 @@
 # Beat maker
 
-Create beats with 8 instrument loops in a 16 note sequence and adjustable play tempo.
+Create rhytm beats with 8 instrument loops using a 16 step sequencer. Simply select notes you want to play and hit Space (or Play buton). Adjust playback tempo by changing bpm.
 
 ## Getting Started
 
@@ -8,7 +8,8 @@ Start reading the code at _app/index.jsx_
 
 # Customizations
 
-Customize all 8 instrument sound loops by replacing them with your own.
+Customize all 8 instrument sound loops (and their colors) by replacing them with your own.
+Adjust also intro screen content - logo and intro text.
 
 ## Support and suggestions
 

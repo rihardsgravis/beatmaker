@@ -116,14 +116,16 @@ const BeatMaker = () => {
             <Pad>
                 {intro && <Intro init={init} settings={Koji.config.general} />}
                 <Grid beats={beats} time={playing ? time : -1} setBeats={setBeats} />
-                <Controls>
-                    <button type="button" className={playing ? 'stop' : 'play'} onClick={() => setPlaying(!playing)} />
+                {!intro && (
+                    <Controls>
+                        <button type="button" className={playing ? 'stop' : 'play'} onClick={() => setPlaying(!playing)} />
 
-                    <div>
-                        {bpm} BPM
-                        <input type="range" min="30" max="180" value={bpm} onChange={({ target }) => setBpm(target.value)} />
-                    </div>
-                </Controls>
+                        <div>
+                            {bpm} BPM
+                            <input type="range" min="30" max="180" value={bpm} onChange={({ target }) => setBpm(target.value)} />
+                        </div>
+                    </Controls>
+                )}
             </Pad>
         </ThemeProvider>
     )
