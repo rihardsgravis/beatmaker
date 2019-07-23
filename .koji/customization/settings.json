@@ -1,0 +1,37 @@
+{
+    "general": {
+        "name": "Beat Maker",
+        "bpm": 75,
+        "logo": "https://objects.koji-cdn.com/b1ab25bd-9833-43d2-b569-4a21d089e811/logo.svg",
+        "intro": "Create dope beats in a 16 step sequencer"
+    },
+    "@@editor": [
+        {
+            "key": "general",
+            "name": "Settings",
+            "icon": "🎛",
+            "source": "general.json",
+            "fields": [
+                {
+                    "key": "name",
+                    "name": "App name"
+                },
+                {
+                    "key": "bpm",
+                    "name": "Default beats per minute"
+                },
+                {
+                    "key": "logo",
+                    "name": "Intro logo Image",
+                    "description": "URL of Image for the intro screen logo",
+                    "type": "image"
+                },
+                {
+                    "key": "intro",
+                    "name": "Intro text",
+                    "description": "Intro screen's intro text"
+                }
+            ]
+        }
+    ]
+}

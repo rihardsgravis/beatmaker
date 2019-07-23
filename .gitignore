@@ -1,0 +1,7 @@
+# Node Modules
+node_modules
+*-error.log
+
+# Parcel Builds
+dist
+.cache

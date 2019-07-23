@@ -1,0 +1,71 @@
+{
+    "sounds": {
+        "beat-1": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
+        "beat-2": "https://audio.cdn.gometa.io/45eb80dd-d339-4d8d-93ff-d27bfc9e81c3-out.mp3",
+        "beat-3": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
+        "beat-4": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
+        "beat-5": "https://audio.cdn.gometa.io/45eb80dd-d339-4d8d-93ff-d27bfc9e81c3-out.mp3",
+        "beat-6": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
+        "beat-7": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
+        "beat-8": "https://audio.cdn.gometa.io/45eb80dd-d339-4d8d-93ff-d27bfc9e81c3-out.mp3",
+        "beat-9": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3"
+    },
+    "@@editor": [
+        {
+            "key": "sounds",
+            "name": "Sounds",
+            "icon": "🔊️",
+            "source": "sounds.json",
+            "fields": [
+                {
+                    "key": "beat-1",
+                    "name": "Beat #1 loop",
+                    "description": "URL of audio file for the 1st instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-2",
+                    "name": "Beat #2 loop",
+                    "description": "URL of audio file for the 2nd instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-3",
+                    "name": "Beat #3 loop",
+                    "description": "URL of audio file for the 3rd instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-4",
+                    "name": "Beat #4 loop",
+                    "description": "URL of audio file for the 5th instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-5",
+                    "name": "Beat #5 loop",
+                    "description": "URL of audio file for the 5th instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-6",
+                    "name": "Beat #6 loop",
+                    "description": "URL of audio file for the 6th instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-7",
+                    "name": "Beat #7 loop",
+                    "description": "URL of audio file for the 7th instrument",
+                    "type": "sound"
+                },
+                {
+                    "key": "beat-8",
+                    "name": "Beat #8 loop",
+                    "description": "URL of audio file for the 8th instrument",
+                    "type": "sound"
+                }
+            ]
+        }
+    ]
+}
