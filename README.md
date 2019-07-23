@@ -1,6 +1,6 @@
 # Beat maker
 
-Create beats with 8 instrument loops in a 16 note sequence adn adjustable play tempo.
+Create beats with 8 instrument loops in a 16 note sequence and adjustable play tempo.
 
 ## Getting Started
 

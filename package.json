@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
         "prestart": "koji-tools watch &",
-        "start": "parcel app/index.html --open",
+        "start": "parcel app/index.html --open --port 8080",
         "build": "parcel build app/index.html",
         "postbuild": "koji-tools pwa",
         "lint": "eslint ./app --ext js --ext jsx"

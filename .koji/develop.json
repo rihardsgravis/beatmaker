@@ -2,7 +2,7 @@
     "develop": {
         "frontend": {
             "path": ".",
-            "port": 1234,
+            "port": 8080,
             "events": {
                 "started": "npm start",
                 "building": "koji-tools watching",
@@ -11,12 +11,5 @@
             },
             "startCommand": "npm start"
         }
-    },
-    "pages": [
-        {
-            "name": "Index",
-            "route": "/",
-            "path": "."
-        }
-    ]
+    }
 }
