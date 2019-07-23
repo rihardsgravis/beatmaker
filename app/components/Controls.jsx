@@ -1,9 +1,9 @@
 import * as React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 /**
- * Create a global wrapper that setups global style of the application
+ * Create a visual wrapper for the Play/Bpm controls panel
  */
 const Controls = ({ children }) => <Wrapper>{children}</Wrapper>
 

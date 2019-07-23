@@ -2,9 +2,12 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+/**
+ * Beat templates for initial sequence setup choice
+ */
 const templates = [
     {
-        title: 'Start empty',
+        title: 'Empty',
         bpm: 75,
         beats: Array(16).fill(Array(8).fill(0))
     },
@@ -99,7 +102,7 @@ const templates = [
 ]
 
 /**
- * Create a global wrapper that setups global style of the application
+ * Setup Intro screen
  */
 const Intro = ({ init, settings }) => {
     const { name, logo, intro } = settings

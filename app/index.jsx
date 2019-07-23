@@ -21,15 +21,23 @@ const keys = new Tone.Players(Koji.config.sounds).toMaster()
 const Sequence = new Tone.Sequence(() => {}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], '16n')
 
 /**
- * Initialise fast click
+ * Initialise fast click - a fix to remove click delays on browsers with touch UIs
  */
 initReactFastclick()
 
+/**
+ * Main Beat Maker component
+ */
 const BeatMaker = () => {
+    // Current beats per minute
     const [bpm, setBpm] = useState(Koji.config.general.bpm)
-    const [loop, setLoop] = useState(false)
+    // Current playing state
+    const [playing, setPlaying] = useState(false)
+    // Current sequence time 0..15
     const [time, setTime] = useState(0)
+    // Sequence beats - see ./components/Intro.jsx for beats structure examples
     const [beats, setBeats] = useState(Array(16).fill(Array(8).fill(0)))
+    // Current Intro screen visibillity
     const [intro, setIntro] = useState(true)
 
     /**
@@ -43,7 +51,7 @@ const BeatMaker = () => {
      * Update Tone.js sequence play state when loop gets updated
      */
     useEffect(() => {
-        if (loop) {
+        if (playing) {
             Sequence.start()
         } else {
             Sequence.stop()
@@ -56,7 +64,7 @@ const BeatMaker = () => {
             if (e.keyCode === 32) {
                 e.preventDefault()
 
-                setLoop(!loop)
+                setPlaying(!playing)
                 return false
             }
             return true
@@ -67,7 +75,7 @@ const BeatMaker = () => {
         return () => {
             window.removeEventListener('keydown', onKeyPress)
         }
-    }, [loop])
+    }, [playing])
 
     /**
      * Update Tone.js sequence when beats get updated
@@ -82,7 +90,7 @@ const BeatMaker = () => {
             }
 
             /**
-             * Loop beats and play key if the ebat is enabled
+             * Loop beats and play key if that beat is enabled
              */
             beats[column].forEach((beat, index) => {
                 if (beat) {
@@ -93,7 +101,7 @@ const BeatMaker = () => {
     }, [beats, time])
 
     /**
-     * Initialise the application with initial beats and bpm
+     * Initialise the application with beats and bpm
      */
     const init = (initialState) => {
         Tone.Transport.start()
@@ -107,9 +115,9 @@ const BeatMaker = () => {
         <ThemeProvider theme={Koji.config.style}>
             <Pad>
                 {intro && <Intro init={init} settings={Koji.config.general} />}
-                <Grid beats={beats} time={loop ? time : -1} setBeats={setBeats} />
+                <Grid beats={beats} time={playing ? time : -1} setBeats={setBeats} />
                 <Controls>
-                    <button type="button" className={loop ? 'stop' : 'play'} onClick={() => setLoop(!loop)} />
+                    <button type="button" className={playing ? 'stop' : 'play'} onClick={() => setPlaying(!playing)} />
 
                     <div>
                         {bpm} BPM

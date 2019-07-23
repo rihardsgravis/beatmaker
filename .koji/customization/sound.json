@@ -1,14 +1,13 @@
 {
     "sounds": {
-        "beat-1": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
-        "beat-2": "https://audio.cdn.gometa.io/45eb80dd-d339-4d8d-93ff-d27bfc9e81c3-out.mp3",
-        "beat-3": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
-        "beat-4": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
-        "beat-5": "https://audio.cdn.gometa.io/45eb80dd-d339-4d8d-93ff-d27bfc9e81c3-out.mp3",
-        "beat-6": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
-        "beat-7": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3",
-        "beat-8": "https://audio.cdn.gometa.io/45eb80dd-d339-4d8d-93ff-d27bfc9e81c3-out.mp3",
-        "beat-9": "https://audio.cdn.gometa.io/29927932-c4a6-4d25-9c43-667e1b580221-out.mp3"
+        "beat-1": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat1.mp3",
+        "beat-2": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat2.mp3",
+        "beat-3": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat3.mp3",
+        "beat-4": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat4.mp3",
+        "beat-5": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat5.mp3",
+        "beat-6": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat6.mp3",
+        "beat-7": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat7.mp3",
+        "beat-8": "https://objects.koji-cdn.com/b4c053d6-a556-491f-a8e8-0ca0ae87ef40/beat8.mp3"
     },
     "@@editor": [
         {
